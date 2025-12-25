@@ -28,5 +28,4 @@ Thumbs.db
 # Node
 node_modules/
 .env.local
-.env.production
 dist/
