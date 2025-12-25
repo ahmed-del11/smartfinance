@@ -1,0 +1,57 @@
+.expense-chart {
+    padding: 1rem;
+}
+
+.expense-chart h3 {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.chart-empty {
+    text-align: center;
+    padding: 3rem 2rem;
+    color: #64748b;
+}
+
+.chart-empty p:first-child {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #94a3b8;
+}
+
+.custom-tooltip {
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    padding: 0.8rem 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.tooltip-label {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    margin-bottom: 0.3rem;
+}
+
+.tooltip-value {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Override Recharts default styles */
+.recharts-legend-item-text {
+    color: #e2e8f0 !important;
+}
+
+.recharts-pie-label-text {
+    fill: #e2e8f0;
+    font-size: 0.8rem;
+}
+
+.recharts-text {
+    fill: #94a3b8;
+}
