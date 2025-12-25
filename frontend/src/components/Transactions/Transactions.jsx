@@ -137,7 +137,7 @@ const Transactions = () => {
                                 </div>
                                 <div className="transaction-date">{formatDate(transaction.date)}</div>
                                 <div className={`transaction-amount ${transaction.category?.type}`}>
-                                    {transaction.category?.type === 'income' ? '+' : '-'}${parseFloat(transaction.amount).toFixed(2)}
+                                    {transaction.category?.type === 'income' ? '+' : '-'}{parseFloat(transaction.amount).toFixed(2)} SAR
                                 </div>
                                 <button className="btn-delete" onClick={() => handleDelete(transaction.id)}>
                                     🗑️

@@ -56,7 +56,7 @@ const TransactionForm = ({ categories, onSubmit, onClose }) => {
 
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
-                        <label>Amount ($)</label>
+                        <label>Amount (SAR)</label>
                         <input
                             type="number"
                             step="0.01"

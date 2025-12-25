@@ -31,7 +31,7 @@ const ExpenseChart = ({ data }) => {
             return (
                 <div className="custom-tooltip">
                     <p className="tooltip-label">{data.name}</p>
-                    <p className="tooltip-value">${data.value.toFixed(2)}</p>
+                    <p className="tooltip-value">{data.value.toFixed(2)} SAR</p>
                 </div>
             );
         }
