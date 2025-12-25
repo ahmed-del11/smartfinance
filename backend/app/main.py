@@ -23,7 +23,8 @@ app.add_middleware(
         "http://localhost:5173",
         "http://localhost:5174",
         "http://localhost:3000",
-        "https://smartfinance-five.vercel.app"
+        "https://smartfinance-five.vercel.app",
+        "https://smartfinance-3uhb.vercel.app"
     ],
     allow_credentials=True,
     allow_methods=["*"],
