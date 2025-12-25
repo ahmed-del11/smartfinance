@@ -1,28 +1,38 @@
-# 💰 SmartFinance - Expense Tracker
+# SmartFinance - Personal Expense Tracker
 
-A full-stack personal finance application built with **Python (FastAPI)** and **React.js** featuring data visualization.
+A full-stack personal finance application built with Python (FastAPI) and React.js featuring interactive data visualization for tracking income and expenses.
 
-![SmartFinance](https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800)
+![SmartFinance](https://img.shields.io/badge/SmartFinance-Personal%20Finance-blue)
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
 
-## ✨ Features
+---
 
-- 📊 **Dashboard** - View total income, expenses, and balance at a glance
-- 📈 **Visual Analytics** - Interactive pie chart showing expense breakdown by category
-- 💸 **Transaction Management** - Add, filter, and delete income/expenses
-- 📅 **Date Filtering** - Filter transactions by custom date ranges
-- 🔐 **Secure Authentication** - JWT-based user authentication
+## Features
 
-## 🛠️ Tech Stack
+- **Dashboard** - View total income, expenses, and balance at a glance
+- **Visual Analytics** - Interactive pie chart showing expense breakdown by category
+- **Transaction Management** - Add, filter, and delete income/expenses
+- **Date Filtering** - Filter transactions by custom date ranges
+- **Secure Authentication** - JWT-based user authentication
+- **SAR Currency Support** - Built with Saudi Riyal currency
+
+---
+
+## Tech Stack
 
 | Layer | Technology |
 |-------|------------|
-| **Frontend** | React.js 18, React Router v6, Recharts |
-| **Backend** | Python, FastAPI |
-| **Database** | PostgreSQL with SQLAlchemy ORM |
-| **Auth** | JWT tokens, bcrypt password hashing |
-| **HTTP Client** | Axios |
+| Frontend | React.js 18, React Router v6, Recharts, Vite |
+| Backend | Python, FastAPI, Uvicorn |
+| Database | SQLite / PostgreSQL with SQLAlchemy ORM |
+| Auth | JWT tokens, Passlib password hashing |
+| Deployment | Vercel (Frontend), Render (Backend) |
 
-## 📁 Project Structure
+---
+
+## Project Structure
 
 ```
 smartfinance/
@@ -48,7 +58,9 @@ smartfinance/
     └── package.json
 ```
 
-## 📊 Database Schema
+---
+
+## Database Schema
 
 ```
 ┌─────────────┐     ┌──────────────────┐     ┌──────────────┐
@@ -62,12 +74,15 @@ smartfinance/
 └─────────────┘     └──────────────────┘     └──────────────┘
 ```
 
-## 🚀 Quick Start
+---
+
+## Quick Start
 
 ### Prerequisites
+
 - Python 3.10+
-- PostgreSQL (or SQLite for quick start)
 - Node.js v18+
+- PostgreSQL (optional - SQLite works for development)
 
 ### Backend Setup
 
@@ -100,9 +115,12 @@ npm install
 npm run dev
 ```
 
-## 🔗 API Endpoints
+---
+
+## API Endpoints
 
 ### Authentication
+
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | POST | `/api/auth/register` | Register user |
@@ -110,38 +128,68 @@ npm run dev
 | GET | `/api/auth/me` | Get current user |
 
 ### Dashboard
+
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | GET | `/api/dashboard/summary` | Income, expenses, balance |
 | GET | `/api/dashboard/chart` | Expense chart data |
 
 ### Transactions
+
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | GET | `/api/transactions` | List transactions (with filters) |
 | POST | `/api/transactions` | Create transaction |
 | DELETE | `/api/transactions/{id}` | Delete transaction |
 
-## 🧪 Demo Credentials
+### Categories
 
-```
-Email: demo@smartfinance.com
-Password: demo123
-```
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/categories` | List all categories |
 
-## 📝 Environment Variables
+---
+
+## Environment Variables
 
 ### Backend (.env)
+
 ```env
-DATABASE_URL=postgresql://user:password@localhost:5432/smartfinance
+DATABASE_URL=sqlite:///./smartfinance.db
 SECRET_KEY=your_jwt_secret_key
 ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=30
 ```
 
-## 👨‍💻 Author
+### Frontend (.env.local)
+
+```env
+VITE_API_URL=http://localhost:8000/api
+```
+
+---
+
+## Live Demo
+
+- **Frontend:** [smartfinance-3uhb.vercel.app](https://smartfinance-3uhb.vercel.app)
+- **Backend API:** [smartfinance-15n2.onrender.com](https://smartfinance-15n2.onrender.com)
+
+---
+
+## Contact
 
 **Ahmed Ramadan** - Full-Stack Developer
 
-## 📄 License
+- Portfolio: [portfolio-rouge-ten-k3hf1ebs9e.vercel.app](https://portfolio-rouge-ten-k3hf1ebs9e.vercel.app)
+- GitHub: [@ahmed-del11](https://github.com/ahmed-del11)
+- LinkedIn: [ahmed-ramadan-9641ba211](https://www.linkedin.com/in/ahmed-ramadan-9641ba211)
 
-MIT License - feel free to use this project for your portfolio!
+---
+
+## License
+
+MIT License - feel free to use this project for learning and your portfolio!
+
+---
+
+If you found this project helpful, please give it a star!
