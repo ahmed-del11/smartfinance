@@ -11,15 +11,15 @@ const Header = () => {
     return (
         <header className="header">
             <div className="header-container">
-                <Link to="/" className="logo">
+                <Link to="/dashboard" className="logo">
                     <span className="logo-icon">💰</span>
                     SmartFinance
                 </Link>
 
                 <nav className="nav-links">
                     <Link
-                        to="/"
-                        className={`nav-link ${isActive('/') ? 'active' : ''}`}
+                        to="/dashboard"
+                        className={`nav-link ${isActive('/dashboard') ? 'active' : ''}`}
                     >
                         Dashboard
                     </Link>

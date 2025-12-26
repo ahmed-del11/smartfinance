@@ -5,6 +5,7 @@ import Dashboard from './components/Dashboard/Dashboard';
 import Transactions from './components/Transactions/Transactions';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
+import LandingPage from './pages/LandingPage';
 import './App.css';
 
 // Protected Route wrapper
@@ -16,7 +17,7 @@ const ProtectedRoute = ({ children }) => {
   }
 
   if (!user) {
-    return <Navigate to="/login" replace />;
+    return <Navigate to="/" replace />;
   }
 
   return children;
@@ -30,12 +31,16 @@ const AppContent = () => {
     <Router>
       <div className="app">
         {user && <Header />}
-        <main className="main-content">
+        <main className={user ? "main-content" : ""}>
           <Routes>
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/register" element={<RegisterPage />} />
+            {/* Public Routes */}
+            <Route path="/" element={user ? <Navigate to="/dashboard" replace /> : <LandingPage />} />
+            <Route path="/login" element={user ? <Navigate to="/dashboard" replace /> : <LoginPage />} />
+            <Route path="/register" element={user ? <Navigate to="/dashboard" replace /> : <RegisterPage />} />
+
+            {/* Protected Routes */}
             <Route
-              path="/"
+              path="/dashboard"
               element={
                 <ProtectedRoute>
                   <Dashboard />
@@ -66,3 +71,4 @@ function App() {
 }
 
 export default App;
+

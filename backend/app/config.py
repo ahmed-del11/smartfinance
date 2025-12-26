@@ -6,7 +6,7 @@ class Settings(BaseSettings):
     database_url: str = "sqlite:///./smartfinance.db"
     secret_key: str = "smartfinance-secret-key-2024"
     algorithm: str = "HS256"
-    access_token_expire_minutes: int = 30
+    access_token_expire_minutes: int = 10080  # 7 days
 
     class Config:
         env_file = ".env"
