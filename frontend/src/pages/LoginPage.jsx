@@ -32,7 +32,7 @@ const LoginPage = () => {
         <div className="auth-page">
             <div className="auth-card">
                 <div className="auth-header">
-                    <img src="/logo.png" alt="SmartFinance" className="auth-logo" />
+                    <img src="/logo.svg" alt="SmartFinance" className="auth-logo" />
                     <h1>Welcome to SmartFinance</h1>
                     <p>Sign in to manage your finances</p>
                 </div>
