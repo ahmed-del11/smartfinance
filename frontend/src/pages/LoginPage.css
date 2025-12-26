@@ -21,10 +21,12 @@
     margin-bottom: 2rem;
 }
 
-.auth-icon {
-    font-size: 3rem;
+.auth-logo {
+    width: 70px;
+    height: 70px;
     display: block;
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem;
+    object-fit: contain;
 }
 
 .auth-header h1 {
