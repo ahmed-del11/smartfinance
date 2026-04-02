@@ -171,7 +171,7 @@ VITE_API_URL=http://localhost:8000/api
 
 ## Live Demo
 
-- **Frontend:** [smartfinance-3uhb.vercel.app](https://smartfinance-3uhb.vercel.app)
+- **Frontend:** [smartfinance-3uhb.vercel.app](https://smartfinance.ahmedramadan.dev/)
 - **Backend API:** [smartfinance-15n2.onrender.com](https://smartfinance-15n2.onrender.com)
 
 ---
@@ -180,7 +180,7 @@ VITE_API_URL=http://localhost:8000/api
 
 **Ahmed Ramadan** - Full-Stack Developer
 
-- Portfolio: [portfolio-rouge-ten-k3hf1ebs9e.vercel.app](https://portfolio-rouge-ten-k3hf1ebs9e.vercel.app)
+- Portfolio: [https://www.ahmedramadan.dev/](https://www.ahmedramadan.dev/)
 - GitHub: [@ahmed-del11](https://github.com/ahmed-del11)
 - LinkedIn: [ahmed-ramadan-9641ba211](https://www.linkedin.com/in/ahmed-ramadan-9641ba211)
 
