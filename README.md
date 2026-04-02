@@ -172,8 +172,6 @@ VITE_API_URL=http://localhost:8000/api
 ## Live Demo
 
 - **Frontend:** [https://smartfinance.ahmedramadan.dev/](https://smartfinance.ahmedramadan.dev/)
-- **Backend API:** [smartfinance-15n2.onrender.com](https://smartfinance-15n2.onrender.com)
-
 ---
 
 ## Contact
